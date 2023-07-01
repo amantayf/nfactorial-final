@@ -5,6 +5,13 @@
 //  Created by Fatima Amantay on 10.06.2023.
 //
 
+// Hey sista, we are not web devs, so no need to include everything inside one big file HaHa
+// Try to divide content of this file into different files for better developer experience in the future
+// try to give appropriate naming for this class
+
+// It's very hard to give code review, cause all structure is messed up
+// no actual functioanlity, i think you have a lot of just mock data
+// didn't see any API implementation 
 import SwiftUI
 
 // Data Models
@@ -130,7 +137,7 @@ struct HomeView: View {
     
     var body: some View {
         // Implement your home view content here
-        List(sneakers) { sneaker in
+        List(sneakers) { sneaker in // try to avoid empty unneded lines
            
             SneakerItemView(sneaker: sneaker)
         }
@@ -184,13 +191,15 @@ class UserViewModel: ObservableObject {
     func login() {
         // Implement login functionality
         // Authenticate user and update user properties
-        user = User(name: "John Doe", email: email)
+        user = User(name: "John Doe", email: email) // where's your authentication, i guess it's only mock data
+        // what we do after we created user?
     }
     
     func signup() {
         // Implement signup functionality
         // Create a new user with provided details
-        user = User(name: "Jane Smith", email: email)
+        user = User(name: "Jane Smith", email: email) // also some mock data
+        // what we do after we created user?
     }
 }
 // Shopping Cart View
